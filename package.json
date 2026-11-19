@@ -1,0 +1,17 @@
+{
+  "name": "awareness-cmc-agent",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A crypto research agent that gives CoinMarketCap data a persistent memory via Awareness.",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server.mjs",
+    "brief": "node agent.mjs brief",
+    "recall": "node agent.mjs recall",
+    "test": "node --test test.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

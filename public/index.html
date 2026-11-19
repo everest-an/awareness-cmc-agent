@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Awareness × CoinMarketCap</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <span class="mark">A</span>
+      <div>
+        <h1>Awareness × CoinMarketCap</h1>
+        <p>A market research agent with persistent memory</p>
+      </div>
+    </div>
+    <span class="mode" id="mode">connecting…</span>
+  </header>
+
+  <main>
+    <section class="card">
+      <div class="step">1</div>
+      <h2>Fetch live data — and remember the view</h2>
+      <p class="hint">Pulls the latest quotes from the CoinMarketCap API and writes the brief into Awareness.</p>
+      <div class="row">
+        <input id="symbols" value="BTC, ETH, SOL" placeholder="BTC, ETH, SOL" />
+        <button id="brief-btn">Fetch &amp; remember</button>
+      </div>
+      <div id="brief-state" class="state"></div>
+      <div id="brief"></div>
+    </section>
+
+    <section class="card">
+      <div class="step">2</div>
+      <h2>Recall what the agent learned</h2>
+      <p class="hint">Reads prior briefs from Awareness. Restart the server, reopen the page — this still works.</p>
+      <div class="row">
+        <input id="query" value="BTC market brief" placeholder="BTC market brief" />
+        <button id="recall-btn" class="ghost">Recall memory</button>
+      </div>
+      <div id="recall-state" class="state"></div>
+      <div id="recall"></div>
+    </section>
+  </main>
+
+  <footer>
+    <span>CoinMarketCap API → structured brief → Awareness memory → next session</span>
+    <span>No memory, no research continuity.</span>
+  </footer>
+
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
