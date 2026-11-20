@@ -2,6 +2,8 @@
 
 > Built for **Build with CMC: API Hackathon (Round 2)** — track: **AI Agents and Automation**.
 
+**Demo:** [17s video](https://github.com/everest-an/awareness-cmc-agent/releases/download/demo-2026-11-20/cmc-demo-final.mp4) · **BUIDL:** [dorahacks.io/build/42551](https://dorahacks.io/build/42551) · **Post:** [x.com/everest_an/status/2123661636141494628](https://x.com/everest_an/status/2123661636141494628)
+
 Most crypto assistants are stateless: every session starts from zero. This agent
 gives CoinMarketCap data a **persistent, structured memory** through
 [Awareness](https://awareness.market) — so the next session can recall what it
